@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>شرح البيت التاسع – واحرّ قلباه</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="description" content="شرح البيت التاسع من قصيدة «واحرّ قلباه» لأبي الطيب المتنبي">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;500;700&display=swap">
+<style>
+:root{
+  --night:#17112e; --deep:#2b1d52; --plum:#7b3a86; --pink:#c4338c; --moon:#f4ead0; --gold:#e2b45c;
+  --paper:#f8f4ec; --ink:#241c33; --soft:#6a5f7a;
+  --head:'Amiri','Traditional Arabic','Times New Roman',serif;
+  --body:'Tajawal','Segoe UI',Tahoma,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;background:var(--paper)}
+:root:fullscreen,:root:-webkit-full-screen{background:var(--paper);width:100%;height:100%;overflow:auto}
+::backdrop{background:var(--paper)}
+::selection{background:var(--gold);color:var(--night)}
+body{overflow-x:hidden;font-family:var(--body);background:var(--paper);color:var(--ink);line-height:1.95;font-size:18px}
+
+/* ---------- Hero ---------- */
+.hero{background:radial-gradient(circle at 50% 0,var(--deep),var(--night) 70%);color:var(--moon);text-align:center;padding:60px 20px 140px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;opacity:.5;background-image:radial-gradient(1.5px 1.5px at 12% 20%,#fff,transparent),radial-gradient(1.5px 1.5px at 78% 14%,#fff,transparent),radial-gradient(1px 1px at 30% 60%,#fff,transparent),radial-gradient(1.5px 1.5px at 90% 55%,#fff,transparent),radial-gradient(1px 1px at 55% 35%,#fff,transparent),radial-gradient(1px 1px at 6% 78%,#fff,transparent),radial-gradient(1.5px 1.5px at 66% 80%,#fff,transparent)}
+.hero>*{position:relative}
+.crescent{width:84px;height:84px;margin:0 auto 22px;border-radius:50%;box-shadow:inset -22px 8px 0 0 var(--moon),0 0 60px 6px rgba(244,234,208,.25);animation:glow 5s ease-in-out infinite alternate;will-change:opacity}
+@keyframes glow{from{opacity:.85}to{opacity:1}}
+.hero h1{font-family:var(--head);font-size:clamp(38px,8vw,68px);line-height:1.4;font-weight:700}
+.hero .sub{font-size:19px;opacity:.85;margin-top:2px}
+.verse{max-width:1040px;margin:32px auto 0;font-family:var(--head);font-size:clamp(20px,3vw,30px);line-height:2.1;padding:18px 26px;border-radius:22px;background:rgba(255,255,255,.06);border:1px solid rgba(226,180,92,.35);display:flex;flex-wrap:wrap;justify-content:center;gap:0 .6em}
+.verse span{white-space:nowrap}
+.verse em{font-style:normal;color:#ff7cc4}
+.poet{margin-top:14px;font-size:17px;color:var(--gold)}
+.credits{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:26px;font-size:16px}
+.credits div{padding:9px 20px;border-radius:40px;background:rgba(244,234,208,.12)}
+.credits b{color:var(--gold);font-weight:500;margin-inline-end:6px}
+.wave{position:absolute;bottom:-1px;left:0;width:100%;height:80px;display:block}
+
+/* ---------- Flow ---------- */
+.flow{position:relative;max-width:980px;margin:0 auto;padding:30px 18px 60px}
+.river{position:absolute;top:0;bottom:0;right:50%;width:6px;margin-right:-3px;background:#e2d9e6;border-radius:6px}
+.river i{position:absolute;top:0;right:0;width:100%;height:0;background:linear-gradient(var(--plum),var(--gold));border-radius:6px}
+.step{position:relative;width:50%;padding:18px 0}
+.step:nth-child(odd){margin-right:50%;padding-right:46px;padding-left:0}
+.step:nth-child(even){margin-right:0;padding-left:46px}
+.node{position:absolute;top:34px;width:44px;height:44px;border-radius:50%;background:var(--paper);border:4px solid var(--gold);display:grid;place-items:center;z-index:2;transition:background .4s,transform .4s}
+.step:nth-child(odd) .node{right:-22px}
+.step:nth-child(even) .node{left:-22px}
+.node svg{width:22px;height:22px;fill:none;stroke:var(--deep);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.step.on .node{background:var(--gold);transform:scale(1.12)}
+.card{background:#fff;border-radius:26px;padding:24px 26px;box-shadow:0 10px 30px rgba(43,29,82,.1);border-top:5px solid var(--plum)}
+.step:nth-child(even) .card{border-top-color:var(--gold)}
+.card h2{font-family:var(--head);font-size:27px;color:var(--deep);line-height:1.5;margin-bottom:6px}
+.card ul{padding-right:22px;margin-top:4px}
+.card li{margin:4px 0}
+.card li::marker{color:var(--pink)}
+.tag{display:inline-block;background:#f4e8f2;color:var(--deep);border-radius:12px;padding:0 10px;font-weight:500}
+.sim{border-right:4px solid var(--pink);background:#fbf3f8;border-radius:6px 16px 16px 6px;padding:12px 16px;margin-top:12px}
+.sim h3{font-family:var(--head);font-size:21px;color:var(--deep)}
+.full{width:100%!important;margin:0!important;padding:18px 0!important}
+.full .node{right:50%!important;left:auto!important;margin-right:-22px;top:-4px}
+.full .card{margin-top:44px;text-align:center}
+.full .card ul{display:inline-block;text-align:right}
+
+.vocab{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(210px,100%),1fr));gap:10px;margin-top:12px;text-align:right}
+.vocab div{background:#f6eff6;border-radius:14px;padding:8px 14px;line-height:1.7}
+.vocab b{font-family:var(--head);font-size:20px;color:var(--plum);display:block}
+.qa{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:12px;margin-top:12px;text-align:right}
+.qa div{background:#f6eff6;border-radius:16px;padding:12px 16px;line-height:1.8}
+.qa b{font-family:var(--head);font-size:20px;color:var(--pink);display:block}
+
+footer{background:var(--night);color:var(--moon);text-align:center;padding:44px 20px;font-size:17px;line-height:2.2}
+footer .big{font-family:var(--head);font-size:26px;color:var(--gold)}
+
+@media(max-width:760px){
+  body{font-size:17px}
+  .verse{gap:0}
+  .verse span{white-space:normal}
+  .card{padding:20px 16px}
+  .card h2{font-size:23px}
+  .river{right:41px;margin-right:0}
+  .step,.step:nth-child(odd),.step:nth-child(even){width:100%;margin:0;padding:14px 62px 14px 0}
+  .step .node,.step:nth-child(odd) .node,.step:nth-child(even) .node{right:4px;left:auto}
+  .full .node{right:4px!important;margin-right:0;top:34px}
+  .full .card{margin-top:0}
+  .full{padding:14px 62px 14px 0!important}
+}
+@media(prefers-reduced-motion:reduce){.crescent{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="crescent" aria-hidden="true"></div>
+  <h1>واحرّ قلباه</h1>
+  <p class="sub">شرح البيت التاسع</p>
+  <div class="verse">
+    <span>أَنامُ مِلءَ جُفوني عَن <em>شَوارِدِها</em></span>
+    <span>وَيَسهَرُ الخَلقُ جَرّاها وَيَختَصِمُ</span>
+  </div>
+  <div class="poet">أبو الطيّب المتنبي</div>
+  <div class="credits">
+    <div><b>إعداد:</b> أنس نهاد محمود الجعل</div>
+    <div><b>بإشراف:</b> أ. حُسُن خليل أحمد شلش</div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path fill="#f8f4ec" d="M0 40c240 50 480 50 720 20s480-40 720 0v20H0z"/></svg>
+</header>
+
+<main class="flow" id="flow">
+  <div class="river" aria-hidden="true"><i id="fill"></i></div>
+
+  <section class="step">
+    <div class="node"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12,3 14.8,9 21,9.7 16.3,14 17.8,20.5 12,17 6.2,20.5 7.7,14 3,9.7 9.2,9"/></svg></div>
+    <div class="card">
+      <h2>أولًا: المعنى الإجمالي للبيت</h2>
+      <p>يعبّر الشاعر عن اعتزازه بشعره وافتخاره بقدرته الأدبية، فيقول إنه ينام مرتاحًا مطمئنًا بعد نظم قصائده، بينما ينشغل الناس بشعره، ويسهرون في محاولة فهم معانيه العميقة والنادرة، ويتجادلون ويتناقشون حولها؛ مما يدل على تميز شعره وقوة أفكاره وبلاغة أسلوبه.</p>
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h6a2 2 0 0 1 2 2v12a2 2 0 0 0-2-2H4z M20 5h-6a2 2 0 0 0-2 2v12a2 2 0 0 1 2-2h6z"/></svg></div>
+    <div class="card">
+      <h2>ثانيًا: الشرح التفصيلي للشطرين</h2>
+      <div class="sim">
+        <h3>الشطر الأول: «أَنامُ مِلءَ جُفوني عَن شَوارِدِها»</h3>
+        <p>ينام الشاعر نومًا هانئًا دون قلق، لأنه واثق من جودة شعره وتميز معانيه، التي تتميز بالندرة والعمق، ويشير بذلك إلى قدرته على ابتكار أفكار شعرية يصعب على غيره الإتيان بمثلها.</p>
+      </div>
+      <div class="sim">
+        <h3>الشطر الثاني: «وَيَسهَرُ الخَلقُ جَرّاها وَيَختَصِمُ»</h3>
+        <p>ينشغل الناس بشعره ويسهرون في محاولة فهم معانيه وتفسيرها، بل يتجادلون فيما بينهم حول المقصود منها، وهذا دليل على عمق شعره وقوة تأثيره في المتلقين.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="step full">
+    <div class="node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4v16H5z M11 4h4v16h-4z M17.5 5l3.5 1-3.5 14-3.5-1z"/></svg></div>
+    <div class="card">
+      <h2>ثالثًا: معاني المفردات والتراكيب</h2>
+      <div class="vocab">
+        <div><b>أَنامُ</b>أخلد إلى النوم.</div>
+        <div><b>مِلءَ جُفوني</b>نومًا هانئًا عميقًا.</div>
+        <div><b>جُفوني</b>أجفان عيني.</div>
+        <div><b>شَوارِدِها</b>معانيها النادرة والصعبة.</div>
+        <div><b>الخَلقُ</b>الناس.</div>
+        <div><b>جَرّاها</b>بسببها.</div>
+        <div><b>يَختَصِمُ</b>يتجادل ويتنازع في الرأي.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></div>
+    <div class="card">
+      <h2>رابعًا: الصور الجمالية والبلاغية</h2>
+      <div class="sim">
+        <h3>«أَنامُ مِلءَ جُفوني»</h3>
+        <p>كناية عن راحة البال والثقة بالنفس والاطمئنان إلى جودة الشعر.</p>
+      </div>
+      <div class="sim">
+        <h3>«شَوارِدِها»</h3>
+        <p>استعارة مكنية؛ إذ صوّر المعاني الشعرية بأشياء شاردة يصعب الإمساك بها والوصول إليها.</p>
+      </div>
+      <div class="sim">
+        <h3>«يَسهَرُ الخَلقُ جَرّاها»</h3>
+        <p>تعبير يوحي بشدة انشغال الناس بشعر المتنبي واهتمامهم به.</p>
+      </div>
+      <div class="sim">
+        <h3>«يَختَصِمُ»</h3>
+        <p>يوحي بكثرة النقاش والاختلاف بين الناس حول معاني شعره.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></div>
+    <div class="card">
+      <h2>خامسًا: المحسنات البديعية</h2>
+      <p><span class="tag">الطباق الإيجابي</span> بين «أَنامُ» و«يَسهَرُ».</p>
+      <p>جمع الشاعر بين كلمتين متضادتين؛ لإبراز المفارقة بين حاله المطمئنة وحال الناس المنشغلين بشعره.</p>
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1-4L16.5 4.5a2 2 0 0 1 3 3L8 19z M14 7l3 3"/></svg></div>
+    <div class="card">
+      <h2>سادسًا: الأساليب اللغوية</h2>
+      <ul>
+        <li><span class="tag">«أَنامُ»</span> أسلوب خبري يفيد الإخبار عن حال الشاعر.</li>
+        <li><span class="tag">«يَسهَرُ الخَلقُ وَيَختَصِمُ»</span> أسلوب خبري يصوّر أثر شعره في الناس.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5C5 16 2.5 12.5 2.5 9A4.5 4.5 0 0 1 12 6.8 4.5 4.5 0 0 1 21.5 9c0 3.5-2.5 7-9.5 11.5z"/></svg></div>
+    <div class="card">
+      <h2>سابعًا: العاطفة المسيطرة</h2>
+      <p>الفخر والاعتزاز بالنفس والثقة بالموهبة الشعرية، مع الإعجاب بتميز شعره وعمق معانيه.</p>
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6 M10 21h4 M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg></div>
+    <div class="card">
+      <h2>ثامنًا: القيم والدروس المستفادة</h2>
+      <ul>
+        <li>الثقة بالنفس والاعتزاز بالقدرات والمواهب.</li>
+        <li>أهمية الإبداع والتميز في الأدب.</li>
+        <li>أن الأعمال المتميزة تثير التفكير والنقاش.</li>
+        <li>قيمة الشعر العميق الذي يحمل معاني وأفكارًا متعددة.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="step full">
+    <div class="node"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 .9-1 1.7 M12 17h.01"/></svg></div>
+    <div class="card">
+      <h2>تاسعًا: أسئلة المناقشة</h2>
+      <div class="qa">
+        <div><b>1. بمَ يفتخر المتنبي في البيت؟</b>يفتخر بتميز شعره وعمق معانيه، وانشغال الناس بمحاولة فهمها وتفسيرها.</div>
+        <div><b>2. ما المقصود بـ«شَوارِدِها»؟</b>المعاني الشعرية النادرة والعميقة التي يصعب الوصول إليها وفهمها.</div>
+        <div><b>3. لماذا جمع الشاعر بين النوم والسهر؟</b>ليبرز الفرق بين راحته واطمئنانه إلى شعره، وبين انشغال الناس بمعانيه ومحاولتهم فهمها.</div>
+        <div><b>4. ما الجمال في قوله «أَنامُ مِلءَ جُفوني»؟</b>كناية عن راحة البال والثقة بالنفس.</div>
+        <div><b>5. ما المحسن البديعي في البيت؟</b>الطباق بين «أَنامُ» و«يَسهَرُ».</div>
+        <div><b>6. ما دلالة قوله «وَيَختَصِمُ»؟</b>يدل على كثرة اختلاف الناس ونقاشهم حول معاني شعره.</div>
+        <div><b>7. ما الفكرة التي يريد الشاعر إيصالها؟</b>إبراز تفوقه الشعري وعمق معانيه التي تشغل الناس وتدفعهم إلى التفكير والنقاش.</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="big">شكرًا لحسن استماعكم</div>
+  إعداد: أنس نهاد محمود الجعل<br>
+  بإشراف: أ. حُسُن خليل أحمد شلش
+</footer>
+
+<script>
+(function(){
+  var flow=document.getElementById('flow'),fill=document.getElementById('fill'),
+      steps=[].slice.call(document.querySelectorAll('.step'));
+  function update(){
+    var r=flow.getBoundingClientRect(),mid=window.innerHeight*0.55;
+    var h=Math.max(0,Math.min(r.height,mid-r.top));
+    fill.style.height=h+'px';
+    steps.forEach(function(s){
+      var n=s.querySelector('.node').getBoundingClientRect();
+      s.classList.toggle('on',n.top+22<mid);
+    });
+  }
+  window.addEventListener('scroll',update,{passive:true});
+  window.addEventListener('resize',update);
+  update();
+  function toggleFS(){
+    var d=document,el=d.documentElement;
+    var cur=d.fullscreenElement||d.webkitFullscreenElement;
+    try{
+      if(cur){(d.exitFullscreen||d.webkitExitFullscreen).call(d);}
+      else{
+        var p=(el.requestFullscreen||el.webkitRequestFullscreen).call(el);
+        if(p&&p.catch){p.catch(function(){});}
+      }
+    }catch(err){}
+  }
+  document.addEventListener('keydown',function(e){
+    if(e.ctrlKey||e.metaKey||e.altKey){return;}
+    if(e.key==='f'||e.key==='F'||e.key==='ب'){toggleFS();}
+  });
+})();
+</script>
+</body>
+</html>
